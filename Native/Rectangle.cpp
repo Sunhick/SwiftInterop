@@ -1,6 +1,6 @@
 //
 //  Rectangle.cpp
-//  interop
+//  SwiftInterop
 //
 //  Created by Sunil on 2/25/18.
 //  Copyright © 2018 Sunil. All rights reserved.
