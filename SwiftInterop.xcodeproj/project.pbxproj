@@ -30,7 +30,7 @@
 		A344B8FB2043448C00565009 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		A344B8FD204344A300565009 /* Rectangle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Rectangle.cpp; sourceTree = "<group>"; };
 		A344B8FE204344A300565009 /* Rectangle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Rectangle.hpp; sourceTree = "<group>"; };
-		A344B9052043466E00565009 /* RectangleWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RectangleWrapper.h; sourceTree = "<group>"; };
+		A344B9052043466E00565009 /* RectangleWrapper.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = RectangleWrapper.hpp; sourceTree = "<group>"; };
 		A344B9062043466E00565009 /* RectangleWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = RectangleWrapper.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,7 +84,7 @@
 		A344B90920434E6600565009 /* Wrappers */ = {
 			isa = PBXGroup;
 			children = (
-				A344B9052043466E00565009 /* RectangleWrapper.h */,
+				A344B9052043466E00565009 /* RectangleWrapper.hpp */,
 				A344B9062043466E00565009 /* RectangleWrapper.mm */,
 			);
 			path = Wrappers;

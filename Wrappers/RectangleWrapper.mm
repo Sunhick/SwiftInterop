@@ -6,7 +6,7 @@
 //  Copyright © 2018 Sunil. All rights reserved.
 //
 
-#import "RectangleWrapper.h"
+#import "RectangleWrapper.hpp"
 #import "Rectangle.hpp"
 
 @implementation RectangleWrapper
