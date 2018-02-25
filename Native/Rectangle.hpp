@@ -9,8 +9,14 @@
 #ifndef RECTANGLE_HPP
 #define RECTANGLE_HPP
 
+#include "LoggerWrapper-Interface.h"
+
 class Rectangle {
+private:
+    LoggerWrapperImpl* impl;
+    
 public:
+    Rectangle();
     void draw();
 };
 

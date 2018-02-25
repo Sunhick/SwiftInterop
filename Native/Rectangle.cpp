@@ -10,6 +10,11 @@
 
 #include <iostream>
 
+Rectangle::Rectangle() {
+    impl = new LoggerWrapperImpl();
+}
+
 void Rectangle::draw() {
     std::cout << "drawing rectangle" << std::endl;
+    impl->debug("C++ calling into Swift");
 }

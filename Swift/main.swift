@@ -8,5 +8,9 @@
 
 import Foundation
 
+let log = Logger()
+log.debug(msg: "Happy coding")
+
+log.debug(msg: "Swift calling into C++")
 let rect = RectangleWrapper()
 rect?.draw()

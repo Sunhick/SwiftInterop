@@ -1,5 +1,5 @@
 //
-//  RectangleWrapper.h
+//  RectangleWrapper.hpp
 //  SwiftInterop
 //
 //  Created by Sunil on 2/25/18.
