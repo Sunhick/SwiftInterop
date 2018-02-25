@@ -12,7 +12,7 @@
 @implementation RectangleWrapper
 
 - (RectangleWrapper*) init {
-    ptr = (void*)new Rectangle;
+    ptr = new Rectangle;
     return self;
 }
 
