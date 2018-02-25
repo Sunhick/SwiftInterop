@@ -50,7 +50,7 @@
 			children = (
 				A344B90920434E6600565009 /* Wrappers */,
 				A344B90820434DCF00565009 /* Native */,
-				A344B8F22043447700565009 /* SwiftInterop */,
+				A344B8F22043447700565009 /* Swift */,
 				A344B8F12043447700565009 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -63,13 +63,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A344B8F22043447700565009 /* SwiftInterop */ = {
+		A344B8F22043447700565009 /* Swift */ = {
 			isa = PBXGroup;
 			children = (
 				A344B8FB2043448C00565009 /* main.swift */,
 				A344B8FA2043448B00565009 /* SwiftInterop-Bridging-Header.h */,
 			);
-			path = SwiftInterop;
+			path = Swift;
 			sourceTree = "<group>";
 		};
 		A344B90820434DCF00565009 /* Native */ = {
@@ -267,7 +267,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "SwiftInterop/SwiftInterop-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Swift/SwiftInterop-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
@@ -280,7 +280,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "SwiftInterop/SwiftInterop-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Swift/SwiftInterop-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
