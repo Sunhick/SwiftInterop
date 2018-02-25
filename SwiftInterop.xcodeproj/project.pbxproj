@@ -26,7 +26,7 @@
 
 /* Begin PBXFileReference section */
 		A344B8F02043447700565009 /* SwiftInterop */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftInterop; sourceTree = BUILT_PRODUCTS_DIR; };
-		A344B8FA2043448B00565009 /* interop-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "interop-Bridging-Header.h"; sourceTree = "<group>"; };
+		A344B8FA2043448B00565009 /* SwiftInterop-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftInterop-Bridging-Header.h"; sourceTree = "<group>"; };
 		A344B8FB2043448C00565009 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		A344B8FD204344A300565009 /* Rectangle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Rectangle.cpp; sourceTree = "<group>"; };
 		A344B8FE204344A300565009 /* Rectangle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Rectangle.hpp; sourceTree = "<group>"; };
@@ -48,6 +48,8 @@
 		A344B8E72043447700565009 = {
 			isa = PBXGroup;
 			children = (
+				A344B90920434E6600565009 /* Wrappers */,
+				A344B90820434DCF00565009 /* Native */,
 				A344B8F22043447700565009 /* SwiftInterop */,
 				A344B8F12043447700565009 /* Products */,
 			);
@@ -65,13 +67,27 @@
 			isa = PBXGroup;
 			children = (
 				A344B8FB2043448C00565009 /* main.swift */,
-				A344B8FA2043448B00565009 /* interop-Bridging-Header.h */,
+				A344B8FA2043448B00565009 /* SwiftInterop-Bridging-Header.h */,
+			);
+			path = SwiftInterop;
+			sourceTree = "<group>";
+		};
+		A344B90820434DCF00565009 /* Native */ = {
+			isa = PBXGroup;
+			children = (
 				A344B8FD204344A300565009 /* Rectangle.cpp */,
 				A344B8FE204344A300565009 /* Rectangle.hpp */,
+			);
+			path = Native;
+			sourceTree = "<group>";
+		};
+		A344B90920434E6600565009 /* Wrappers */ = {
+			isa = PBXGroup;
+			children = (
 				A344B9052043466E00565009 /* RectangleWrapper.h */,
 				A344B9062043466E00565009 /* RectangleWrapper.mm */,
 			);
-			path = SwiftInterop;
+			path = Wrappers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,7 +267,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "interop/interop-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftInterop/SwiftInterop-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
@@ -264,7 +280,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "interop/interop-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftInterop/SwiftInterop-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

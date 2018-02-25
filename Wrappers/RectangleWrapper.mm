@@ -1,5 +1,5 @@
 //
-//  NSObject+RectangleWrapper.m
+//  RectangleWrapper.mm
 //  interop
 //
 //  Created by Sunil on 2/25/18.

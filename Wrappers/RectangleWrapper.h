@@ -1,5 +1,5 @@
 //
-//  NSObject+RectangleWrapper.h
+//  RectangleWrapper.h
 //  interop
 //
 //  Created by Sunil on 2/25/18.
@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-
 
 @interface RectangleWrapper : NSObject {
 @private
