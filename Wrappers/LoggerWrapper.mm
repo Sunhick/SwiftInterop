@@ -44,7 +44,7 @@ void LoggerWrapperImpl::info(const char* cmsg) {
     LoggerWrapper* wrapper = (__bridge LoggerWrapper*)self;
     if (wrapper != nil) {
         NSString* msg = [[NSString alloc] initWithUTF8String:cmsg];
-        [wrapper debug:msg];
+        [wrapper->logger infoWithMsg:msg];
     }
 }
 
