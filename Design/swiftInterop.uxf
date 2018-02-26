@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>390</x>
+      <y>490</y>
+      <w>150</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>main
+valign=center
+fontsize=12</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>400</x>
+      <y>170</y>
+      <w>130</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>Rectangle
+--
++ draw()
+valign=center
+fontsize=12</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>400</x>
+      <y>330</y>
+      <w>150</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>RectangleWrapper
+--
++ draw()
+valign=center
+fontsize=12</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>450</x>
+      <y>210</y>
+      <w>30</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;</panel_attributes>
+    <additional_attributes>10.0;120.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>450</x>
+      <y>370</y>
+      <w>30</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;</panel_attributes>
+    <additional_attributes>10.0;120.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>660</x>
+      <y>170</y>
+      <w>180</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>LoggerWrapperImpl
+--
++ info(string)
++ debug(string)
+valign=center
+fontsize=12</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>520</x>
+      <y>180</y>
+      <w>160</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>140.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>660</x>
+      <y>320</y>
+      <w>180</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>LoggerWrapper
+--
++ info(string)
++ debug(string)
+valign=center
+fontsize=12</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>740</x>
+      <y>220</y>
+      <w>30</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;100.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>680</x>
+      <y>490</y>
+      <w>150</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>Logger
+valign=center
+fontsize=12</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>740</x>
+      <y>370</y>
+      <w>30</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>330</x>
+      <y>430</y>
+      <w>590</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>Swift
+bg=orange
+layer=-1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>330</x>
+      <y>130</y>
+      <w>590</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>C++
+bg=gray
+layer=-1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>330</x>
+      <y>280</y>
+      <w>590</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>Objective c++
+bg=light_gray
+layer=-1</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
