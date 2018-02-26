@@ -18,11 +18,11 @@
 }
 
 - (void) draw {
-//    LoggerWrapper* lw = [[LoggerWrapper alloc] init];
-//    [lw debug:@"called from objective c++ wrapper"];
-    
     Rectangle* rect =  reinterpret_cast<Rectangle*>(ptr);
     rect->draw();
+
+    LoggerWrapper* log = [[LoggerWrapper alloc] init];
+    [log debug:@"called from objective c++ wrapper"];
 }
 
 @end
