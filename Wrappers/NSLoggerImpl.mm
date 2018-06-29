@@ -17,11 +17,17 @@ NSLoggerImpl::NSLoggerImpl(std::string name) : self(NULL) {
 NSLoggerImpl::~NSLoggerImpl(void) {
     // ARC forbids explicit message send of 'dealloc'
     // We need to disable ARC for this file/ project using  fno-objc-arc
+    
+    // Tell ARC to take control of this object and release it for us when it's ref.
+    // count reaches zero.
     Logger* logger __unused = (__bridge_transfer Logger*)self;
 }
 
 void NSLoggerImpl::init(std::string name) {
     NSString* logName = [NSString stringWithUTF8String:name.c_str()];
+    
+    // Manually increment the reference count of logger by 1. so that it will be
+    // long lived and we will dealloc ourselves later. (that's a lie for now).
     self = (__bridge_retained void*)[[Logger alloc] init:logName];
 }
 
