@@ -1,19 +1,24 @@
-//
-//  Logger.swift
-//  SwiftInterop
-//
-//  Created by Sunil on 2/25/18.
 //  Copyright © 2018 Sunil. All rights reserved.
-//
 
 import Foundation
 
 @objc class Logger : NSObject {
+    var name: String
+    
+    required init(_ name: String) {
+        self.name = name
+        print("[\(name)]: Logger init")
+    }
+    
     @objc func debug(msg : String) {
-        print("DEBUG: " + msg)
+        print("[\(name)] DEBUG: " + msg)
     }
     
     @objc func info(msg : String) {
-        print("INFO: " + msg)
+        print("[\(name)] INFO: " + msg)
+    }
+    
+    deinit {
+        print("[\(name)]: Logger deinit")
     }
 }

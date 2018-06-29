@@ -1,23 +1,16 @@
-//
-//  Rectangle.hpp
-//  SwiftInterop
-//
-//  Created by Sunil on 2/25/18.
 //  Copyright © 2018 Sunil. All rights reserved.
-//
 
-#ifndef RECTANGLE_HPP
-#define RECTANGLE_HPP
+#pragma once
 
-#include "LoggerWrapper-Interface.h"
+#import <memory>
+
+#include "NSLoggerImpl.hpp"
 
 class Rectangle {
 private:
-    LoggerWrapperImpl* impl;
+    std::shared_ptr<NSLoggerImpl> impl;
     
 public:
     Rectangle();
     void draw();
 };
-
-#endif // RECTANGLE_HPP

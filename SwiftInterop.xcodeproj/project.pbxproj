@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		A344B8FC2043448C00565009 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A344B8FB2043448C00565009 /* main.swift */; };
 		A344B8FF204344A300565009 /* Rectangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A344B8FD204344A300565009 /* Rectangle.cpp */; };
-		A344B9072043466E00565009 /* RectangleWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = A344B9062043466E00565009 /* RectangleWrapper.mm */; };
+		A344B9072043466E00565009 /* NSRectangle.mm in Sources */ = {isa = PBXBuildFile; fileRef = A344B9062043466E00565009 /* NSRectangle.mm */; };
 		A344B90C2043529A00565009 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = A344B90B2043529A00565009 /* Logger.swift */; };
-		A344B90F204353A600565009 /* LoggerWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = A344B90E204353A600565009 /* LoggerWrapper.mm */; };
+		A344B90F204353A600565009 /* NSLoggerImpl.mm in Sources */ = {isa = PBXBuildFile; fileRef = A344B90E204353A600565009 /* NSLoggerImpl.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,12 +32,11 @@
 		A344B8FB2043448C00565009 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		A344B8FD204344A300565009 /* Rectangle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Rectangle.cpp; sourceTree = "<group>"; };
 		A344B8FE204344A300565009 /* Rectangle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Rectangle.hpp; sourceTree = "<group>"; };
-		A344B9052043466E00565009 /* RectangleWrapper.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = RectangleWrapper.hpp; sourceTree = "<group>"; };
-		A344B9062043466E00565009 /* RectangleWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = RectangleWrapper.mm; sourceTree = "<group>"; };
+		A344B9052043466E00565009 /* NSRectangle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = NSRectangle.hpp; sourceTree = "<group>"; };
+		A344B9062043466E00565009 /* NSRectangle.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = NSRectangle.mm; sourceTree = "<group>"; };
 		A344B90B2043529A00565009 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
-		A344B90D204353A600565009 /* LoggerWrapper.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LoggerWrapper.hpp; sourceTree = "<group>"; };
-		A344B90E204353A600565009 /* LoggerWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LoggerWrapper.mm; sourceTree = "<group>"; };
-		A344B9102043585B00565009 /* LoggerWrapper-Interface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LoggerWrapper-Interface.h"; sourceTree = "<group>"; };
+		A344B90E204353A600565009 /* NSLoggerImpl.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = NSLoggerImpl.mm; sourceTree = "<group>"; };
+		A344B9102043585B00565009 /* NSLoggerImpl.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = NSLoggerImpl.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +83,7 @@
 			children = (
 				A344B8FD204344A300565009 /* Rectangle.cpp */,
 				A344B8FE204344A300565009 /* Rectangle.hpp */,
-				A344B9102043585B00565009 /* LoggerWrapper-Interface.h */,
+				A344B9102043585B00565009 /* NSLoggerImpl.hpp */,
 			);
 			path = Native;
 			sourceTree = "<group>";
@@ -92,10 +91,9 @@
 		A344B90920434E6600565009 /* Wrappers */ = {
 			isa = PBXGroup;
 			children = (
-				A344B9052043466E00565009 /* RectangleWrapper.hpp */,
-				A344B9062043466E00565009 /* RectangleWrapper.mm */,
-				A344B90D204353A600565009 /* LoggerWrapper.hpp */,
-				A344B90E204353A600565009 /* LoggerWrapper.mm */,
+				A344B9052043466E00565009 /* NSRectangle.hpp */,
+				A344B9062043466E00565009 /* NSRectangle.mm */,
+				A344B90E204353A600565009 /* NSLoggerImpl.mm */,
 			);
 			path = Wrappers;
 			sourceTree = "<group>";
@@ -158,9 +156,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A344B9072043466E00565009 /* RectangleWrapper.mm in Sources */,
+				A344B9072043466E00565009 /* NSRectangle.mm in Sources */,
 				A344B8FC2043448C00565009 /* main.swift in Sources */,
-				A344B90F204353A600565009 /* LoggerWrapper.mm in Sources */,
+				A344B90F204353A600565009 /* NSLoggerImpl.mm in Sources */,
 				A344B8FF204344A300565009 /* Rectangle.cpp in Sources */,
 				A344B90C2043529A00565009 /* Logger.swift in Sources */,
 			);
